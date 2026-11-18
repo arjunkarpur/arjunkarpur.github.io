@@ -1,4 +1,5 @@
 # Newest first. Optional links: paper, project, code, dataset.
+# Optional `note` (for example Oral) shows in red after the venue.
 # The site always shows them in that order.
 
 - title: >-
@@ -39,6 +40,7 @@
   authors: [Arjun Karpur, Guilherme Perrotta, Ricardo Martin-Brualla,
     Howard Zhou, André Araujo]
   venue: 3DV 2024
+  note: Oral
   paper: https://arxiv.org/abs/2303.12779
 
 - title: >-

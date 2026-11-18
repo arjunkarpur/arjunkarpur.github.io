@@ -44,7 +44,7 @@ b, strong { font-weight: 600; }
   align-items: flex-start;
 }
 
-.side { width: 216px; flex-shrink: 0; text-align: center; }
+.side { width: 240px; flex-shrink: 0; text-align: center; }
 .bio { flex: 1; }
 .bio p:first-child { margin-top: 0; }
 
@@ -64,6 +64,7 @@ ul { padding-left: 20px; }
 .paper p { margin: 0; }
 .title { font-size: 16px; font-weight: 600; }
 .venue { color: #555555; }
+.note { color: #c8102e; font-weight: 600; }
 
 footer {
   margin-top: 56px;

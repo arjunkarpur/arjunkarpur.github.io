@@ -1,4 +1,5 @@
-# Newest first. Example:
-# - year: 2024
-#   text: Outstanding reviewer, CVPR.
-[]
+# One line per item, newest first. Markdown links work.
+- Outstanding Reviewer, CVPR 2024 and CVPR 2025
+- Oral and Best Paper Finalist, 3DV 2024
+- "Reviewer: NeurIPS 2026, ECCV 2026, CVPR 2026, ICCV 2025, CVPR 2025,
+  ECCV 2024, CVPR 2024, ICCV 2023"
