@@ -1,0 +1,104 @@
+# Newest first. Set `highlight: true` to tint a paper's row.
+# Images live in assets/img/papers/.
+
+- title: >-
+    TIPSv2: Advancing Vision-Language Pretraining with Enhanced
+    Patch-Text Alignment
+  authors: [Bingyi Cao, Koert Chen, Kevis-Kokitsi Maninis, Kaifeng Chen,
+    Arjun Karpur, Ye Xia, Sahil Dua, Tanmaya Dabral, Guangxing Han,
+    Bohyung Han, Joshua Ainslie, Alex Bewley, Mithun George Jacob,
+    René Wagner, Washington Ramos, Krzysztof Choromanski,
+    Mojtaba Seyedhosseini, Howard Zhou, André Araujo]
+  venue: CVPR 2026
+  image: tipsv2.jpg
+  links:
+    arXiv: https://arxiv.org/abs/2604.12012
+    project: https://gdm-tipsv2.github.io/
+    code: https://github.com/google-deepmind/tips
+
+- title: "TIPS: Text-Image Pretraining with Spatial Awareness"
+  authors: [Kevis-Kokitsi Maninis, Kaifeng Chen, Soham Ghosh,
+    Arjun Karpur, Koert Chen, Ye Xia, Bingyi Cao, Daniel Salz,
+    Guangxing Han, Jan Dlabal, Dan Gnanapragasam,
+    Mojtaba Seyedhosseini, Howard Zhou, André Araujo]
+  venue: ICLR 2025
+  image: tips.jpg
+  links:
+    paper: https://openreview.net/forum?id=DaA0wAcTY7
+    arXiv: https://arxiv.org/abs/2410.16512
+    code: https://github.com/google-deepmind/tips
+
+- title: >-
+    OmniGlue: Generalizable Feature Matching with Foundation Model
+    Guidance
+  authors: [Hanwen Jiang, Arjun Karpur, Bingyi Cao, Qixing Huang,
+    André Araujo]
+  venue: CVPR 2024
+  image: omniglue.jpg
+  links:
+    arXiv: https://arxiv.org/abs/2405.12979
+    project: https://hwjiang1510.github.io/OmniGlue/
+    code: https://github.com/google-research/omniglue
+
+- title: >-
+    LFM-3D: Learnable Feature Matching Across Wide Baselines Using 3D
+    Signals
+  authors: [Arjun Karpur, Guilherme Perrotta, Ricardo Martin-Brualla,
+    Howard Zhou, André Araujo]
+  venue: 3DV 2024
+  image: lfm3d.jpg
+  links:
+    arXiv: https://arxiv.org/abs/2303.12779
+
+- title: >-
+    NAVI: Category-Agnostic Image Collections with High-Quality 3D
+    Shape and Pose Annotations
+  authors: [Varun Jampani, Kevis-Kokitsi Maninis, Andreas Engelhardt,
+    Arjun Karpur, Karen Truong, Kyle Sargent, Stefan Popov,
+    André Araujo, Ricardo Martin-Brualla, Kaushal Patel,
+    Daniel Vlasic, Vittorio Ferrari, Ameesh Makadia, Ce Liu,
+    Yuanzhen Li, Howard Zhou]
+  venue: NeurIPS 2023 Datasets and Benchmarks
+  image: navi.jpg
+  links:
+    arXiv: https://arxiv.org/abs/2306.09109
+    code: https://github.com/google/navi
+
+- title: Global Features are All You Need for Image Retrieval and Reranking
+  authors: [Shihao Shao, Kaifeng Chen, Arjun Karpur, Qinghua Cui,
+    André Araujo, Bingyi Cao]
+  venue: ICCV 2023
+  image: superglobal.jpg
+  links:
+    arXiv: https://arxiv.org/abs/2308.06954
+    code: https://github.com/ShihaoShao-GH/SuperGlobal
+
+- title: >-
+    Nutrition5k: Towards Automatic Nutritional Understanding of Generic
+    Food
+  authors: [Quin Thames, Arjun Karpur, Wade Norris, Fangting Xia,
+    Liviu Panait, Tobias Weyand, Jack Sim]
+  venue: CVPR 2021
+  image: nutrition5k.jpg
+  links:
+    arXiv: https://arxiv.org/abs/2103.03375
+    dataset: https://github.com/google-research-datasets/Nutrition5k
+
+- title: StarMap for Category-Agnostic Keypoint and Viewpoint Estimation
+  authors: [Xingyi Zhou, Arjun Karpur, Linjie Luo, Qixing Huang]
+  venue: ECCV 2018
+  image: starmap.jpg
+  links:
+    arXiv: https://arxiv.org/abs/1803.09331
+    code: https://github.com/xingyizhou/StarMap
+
+- title: >-
+    Unsupervised Domain Adaptation for 3D Keypoint Estimation via View
+    Consistency
+  authors: [Xingyi Zhou, Arjun Karpur, Chuang Gan, Linjie Luo,
+    Qixing Huang]
+  venue: ECCV 2018
+  image: keypoint_da.jpg
+  links:
+    arXiv: https://arxiv.org/abs/1712.05765
+    code: https://github.com/xingyizhou/3DKeypoints-DA

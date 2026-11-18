@@ -1,0 +1,113 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description | strip }}">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description | strip }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+<main>
+
+  <header class="intro">
+    <div class="bio">
+      <h1>{{ site.title }}</h1>
+      <p>
+        I'm the Head of ML at
+        <a href="https://www.epsilonhealth.ai/">Epsilon Health</a> in San
+        Francisco, where I train image encoders and vision-language models
+        for radiology.
+      </p>
+      <p>
+        Before that, I spent six years at
+        <a href="https://deepmind.google/">Google DeepMind</a> and
+        <a href="https://research.google/">Google Research</a>, working on
+        computer vision and 3D vision: feature matching, image retrieval,
+        3D datasets, and vision-language pretraining.
+      </p>
+      <p class="links">
+        {% for l in site.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% unless forloop.last %}<span>/</span>{% endunless %}{% endfor %}
+      </p>
+    </div>
+    {% if site.photo %}
+    <img class="photo" src="{{ site.photo | relative_url }}"
+      alt="Photo of {{ site.title }}">
+    {% else %}
+    <div class="photo placeholder" aria-hidden="true">AK</div>
+    {% endif %}
+  </header>
+
+  {% assign news = site.data.news %}
+  {% if news.size > 0 %}
+  <section>
+    <h2>News</h2>
+    <ul class="news">
+      {% for n in news limit: 6 %}
+      <li><time>{{ n.date }}</time> {{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+      {% endfor %}
+    </ul>
+    {% if news.size > 6 %}
+    <details>
+      <summary>Show more</summary>
+      <ul class="news">
+        {% for n in news offset: 6 %}
+        <li><time>{{ n.date }}</time> {{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+        {% endfor %}
+      </ul>
+    </details>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  <section>
+    <h2>Publications</h2>
+    {% for p in site.data.publications %}
+    <article class="paper{% if p.highlight %} highlight{% endif %}">
+      <div class="teaser">
+        {% if p.image %}
+        <img src="{{ '/assets/img/papers/' | append: p.image | relative_url }}"
+          alt="" loading="lazy">
+        {% endif %}
+      </div>
+      <div class="info">
+        {% assign main = p.links.first[1] %}
+        <a class="title" href="{{ main }}">{{ p.title }}</a>
+        <p class="authors">
+          {% for a in p.authors %}{% if a == site.title %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </p>
+        <p class="venue"><em>{{ p.venue }}</em></p>
+        <p class="plinks">
+          {% for l in p.links %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% unless forloop.last %}<span>/</span>{% endunless %}{% endfor %}
+        </p>
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+
+  {% assign awards = site.data.awards %}
+  {% if awards.size > 0 %}
+  <section>
+    <h2>Awards</h2>
+    <ul class="news">
+      {% for a in awards %}
+      <li><time>{{ a.year }}</time> {{ a.text }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <footer>
+    Template adapted from <a href="https://jonbarron.info">Jon Barron</a>.
+  </footer>
+
+</main>
+</body>
+</html>
