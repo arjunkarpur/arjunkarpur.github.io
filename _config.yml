@@ -3,9 +3,10 @@ description: >-
   Arjun Karpur is an ML researcher working on computer vision, 3D
   vision, and vision-language models.
 url: https://arjunkarpur.github.io
-email: arjun.karpur@gmail.com
 photo: /assets/img/profile.jpg
 links:
+  - name: Email
+    url: mailto:arjun.karpur@gmail.com
   - name: Scholar
     url: https://scholar.google.com/citations?user=jgSItF4AAAAJ
   - name: X
