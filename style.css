@@ -1,42 +1,26 @@
 :root {
-  --bg: #ffffff;
-  --text: #000000;
-  --muted: #555555;
-  --link: #1772d0;
-  --link-hover: #f09228;
-  --placeholder: #e6e6e6;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #15171a;
-    --text: #e8eaed;
-    --muted: #9aa0a6;
-    --link: #6cb4ff;
-    --link-hover: #ffb35c;
-    --placeholder: #2e3238;
-  }
+  --font: 'Titillium Web', Verdana, Helvetica, sans-serif;
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font: 400 15px/1.55 'Titillium Web', Verdana, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #000000;
+  font: 400 15px/1.55 var(--font);
 }
 
 main {
-  max-width: 840px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 32px 20px;
+  padding: 36px 20px;
 }
 
-a { color: var(--link); text-decoration: none; }
-a:hover, a:focus { color: var(--link-hover); }
+a { color: #1772d0; text-decoration: none; }
+a:hover, a:focus { color: #f09228; }
 
-header { text-align: center; margin-bottom: 28px; }
+header { text-align: center; margin-bottom: 32px; }
 header p { margin: 0; }
 
 h1 {
@@ -47,12 +31,12 @@ h1 {
 }
 
 h2 {
-  margin: 36px 0 12px;
+  margin: 44px 0 16px;
   font-size: 22px;
   font-weight: 600;
 }
 
-strong { font-weight: 700; }
+b, strong { font-weight: 600; }
 
 .intro {
   display: flex;
@@ -60,8 +44,8 @@ strong { font-weight: 700; }
   align-items: flex-start;
 }
 
-.side { width: 32%; flex-shrink: 0; text-align: center; }
-.bio { flex: 1; text-align: justify; }
+.side { width: 216px; flex-shrink: 0; text-align: center; }
+.bio { flex: 1; }
 .bio p:first-child { margin-top: 0; }
 
 .photo {
@@ -72,31 +56,22 @@ strong { font-weight: 700; }
   border-radius: 15px;
 }
 
-.placeholder {
-  display: grid;
-  place-items: center;
-  background: var(--placeholder);
-  color: var(--muted);
-  font-size: 56px;
-  font-weight: 300;
-}
-
-.links { margin-top: 14px; }
+.links { margin: 10px 0 0; }
 
 ul { padding-left: 20px; }
 
-.paper { margin-bottom: 18px; }
-.title { font-size: 17px; font-weight: 700; }
+.paper { margin-bottom: 20px; }
+.paper p { margin: 0; }
+.title { font-size: 16px; font-weight: 600; }
+.venue { color: #555555; }
 
 footer {
-  margin-top: 48px;
+  margin-top: 56px;
   font-size: 13px;
   text-align: right;
 }
 
 @media (max-width: 600px) {
-  .intro { flex-direction: column; align-items: center; gap: 8px; }
-  .side { width: 220px; }
-  .bio { text-align: left; }
+  .intro { flex-direction: column; align-items: center; gap: 16px; }
   h1 { font-size: 32px; }
 }
