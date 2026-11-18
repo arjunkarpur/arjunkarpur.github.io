@@ -4,7 +4,7 @@ description: >-
   vision, and vision-language models.
 url: https://arjunkarpur.github.io
 email: arjun.karpur@gmail.com
-photo: # Path to a headshot, for example /assets/img/profile.jpg.
+photo: /assets/img/profile.jpg
 links:
   - name: Scholar
     url: https://scholar.google.com/citations?user=jgSItF4AAAAJ
