@@ -1,4 +1,13 @@
-# Newest first. Example:
-# - date: 2026-06
-#   text: TIPSv2 presented at CVPR 2026.
-[]
+# Newest first. Markdown links work in `text`.
+- date: Sep 2026
+  text: Epsilon [raised a $27.6M Series A](https://www.epsilon.health/announcements/series-a) to reinvent how radiology is delivered.
+- date: Sep 2026
+  text: "[TIPSv2](https://gdm-tipsv2.github.io/) passed 1 million downloads on Hugging Face."
+- date: May 2026
+  text: Our [LFM-3D patent application](https://patents.google.com/patent/US20260148415A1/en) was published.
+- date: Apr 2026
+  text: TIPSv2 is out. See the [project page](https://gdm-tipsv2.github.io/) for code and models.
+- date: Feb 2026
+  text: TIPSv2 accepted to CVPR 2026.
+- date: Jan 2025
+  text: TIPS accepted to ICLR 2025.

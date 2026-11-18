@@ -60,7 +60,7 @@
     <h2>News</h2>
     <ul>
       {% for n in news %}
-      <li><b>{{ n.date }}</b>: {{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+      <li><b>{{ n.date }}</b>: {{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
       {% endfor %}
     </ul>
   </section>
